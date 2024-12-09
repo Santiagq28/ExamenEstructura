@@ -34,91 +34,145 @@ public class Menu extends javax.swing.JFrame {
         mostrarReporte = new javax.swing.JButton();
         mostrarCartelera = new javax.swing.JButton();
         buscarPersona = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        agregarPelicula.setFont(new java.awt.Font("Segoe UI Emoji", 0, 14)); // NOI18N
         agregarPelicula.setText("Agregar Película");
+        agregarPelicula.setActionCommand("");
+        agregarPelicula.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        agregarPelicula.setFocusPainted(false);
+        agregarPelicula.setFocusable(false);
         agregarPelicula.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 agregarPeliculaActionPerformed(evt);
             }
         });
 
+        venderBoleta.setFont(new java.awt.Font("Segoe UI Emoji", 0, 14)); // NOI18N
         venderBoleta.setText("Vender Boleta");
+        venderBoleta.setActionCommand("");
+        venderBoleta.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        venderBoleta.setEnabled(false);
+        venderBoleta.setFocusPainted(false);
+        venderBoleta.setFocusable(false);
         venderBoleta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 venderBoletaActionPerformed(evt);
             }
         });
 
-        mostrarPersonas.setText("Imprimir");
+        mostrarPersonas.setFont(new java.awt.Font("Segoe UI Emoji", 0, 14)); // NOI18N
+        mostrarPersonas.setText("Mostrar Personas");
+        mostrarPersonas.setActionCommand("");
+        mostrarPersonas.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        mostrarPersonas.setEnabled(false);
+        mostrarPersonas.setFocusPainted(false);
+        mostrarPersonas.setFocusable(false);
         mostrarPersonas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mostrarPersonasActionPerformed(evt);
             }
         });
 
+        mostrarReporte.setFont(new java.awt.Font("Segoe UI Emoji", 0, 14)); // NOI18N
         mostrarReporte.setText("Mostrar Reporte");
+        mostrarReporte.setActionCommand("");
+        mostrarReporte.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        mostrarReporte.setEnabled(false);
+        mostrarReporte.setFocusPainted(false);
+        mostrarReporte.setFocusable(false);
         mostrarReporte.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mostrarReporteActionPerformed(evt);
             }
         });
 
+        mostrarCartelera.setFont(new java.awt.Font("Segoe UI Emoji", 0, 14)); // NOI18N
         mostrarCartelera.setText("Mostrar Cartelera");
+        mostrarCartelera.setActionCommand("");
+        mostrarCartelera.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        mostrarCartelera.setEnabled(false);
+        mostrarCartelera.setFocusPainted(false);
+        mostrarCartelera.setFocusable(false);
         mostrarCartelera.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mostrarCarteleraActionPerformed(evt);
             }
         });
 
+        buscarPersona.setFont(new java.awt.Font("Segoe UI Emoji", 0, 14)); // NOI18N
         buscarPersona.setText("Buscar Persona");
+        buscarPersona.setActionCommand("");
+        buscarPersona.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        buscarPersona.setEnabled(false);
+        buscarPersona.setFocusPainted(false);
+        buscarPersona.setFocusable(false);
         buscarPersona.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buscarPersonaActionPerformed(evt);
             }
         });
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI Emoji", 1, 24)); // NOI18N
+        jLabel1.setText("CINE LEONELDA");
+
+        jLabel2.setText("Acciones");
+
+        jLabel3.setText("Mostrar");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(mostrarCartelera)
-                    .addComponent(mostrarReporte))
-                .addGap(56, 56, 56))
             .addGroup(layout.createSequentialGroup()
-                .addGap(36, 36, 36)
+                .addGap(46, 46, 46)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(buscarPersona)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(mostrarPersonas)
-                        .addGap(86, 86, 86))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(venderBoleta)
-                            .addComponent(agregarPelicula))
-                        .addGap(171, 248, Short.MAX_VALUE))))
+                    .addComponent(agregarPelicula, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(venderBoleta, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buscarPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(mostrarPersonas, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(mostrarReporte, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(mostrarCartelera, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(65, 65, 65))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(80, 80, 80)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel3)
+                .addGap(105, 105, 105))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(124, 124, 124)
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(47, 47, 47)
+                .addGap(23, 23, 23)
+                .addComponent(jLabel1)
+                .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(agregarPelicula)
-                    .addComponent(mostrarCartelera))
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel3))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(agregarPelicula, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(mostrarCartelera, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(venderBoleta)
-                    .addComponent(mostrarReporte))
+                    .addComponent(venderBoleta, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(mostrarReporte, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(32, 32, 32)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(mostrarPersonas)
-                    .addComponent(buscarPersona))
-                .addContainerGap(122, Short.MAX_VALUE))
+                    .addComponent(mostrarPersonas, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buscarPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(82, Short.MAX_VALUE))
         );
 
         pack();
@@ -126,10 +180,21 @@ public class Menu extends javax.swing.JFrame {
 
     private void agregarPeliculaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregarPeliculaActionPerformed
         examen.solicitarPelicula();
+        boolean []estado = examen.cambiarEstado();
+        if(estado[0]){
+            venderBoleta.setEnabled(true);
+            mostrarCartelera.setEnabled(true);
+        }
     }//GEN-LAST:event_agregarPeliculaActionPerformed
 
     private void venderBoletaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_venderBoletaActionPerformed
         examen.venderBoleta();
+        boolean []estado = examen.cambiarEstado();
+        if(estado[1]){
+            mostrarPersonas.setEnabled(true);
+            mostrarReporte.setEnabled(true);
+            buscarPersona.setEnabled(true);
+        }
     }//GEN-LAST:event_venderBoletaActionPerformed
 
     private void mostrarPersonasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mostrarPersonasActionPerformed
@@ -141,7 +206,7 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_mostrarReporteActionPerformed
 
     private void mostrarCarteleraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mostrarCarteleraActionPerformed
-        JOptionPane.showMessageDialog(null,examen.mostrarPeliculas());
+        JOptionPane.showMessageDialog(null,"Cartelera: \n"+examen.mostrarPeliculas());
     }//GEN-LAST:event_mostrarCarteleraActionPerformed
 
     private void buscarPersonaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscarPersonaActionPerformed
@@ -186,6 +251,9 @@ public class Menu extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton agregarPelicula;
     private javax.swing.JButton buscarPersona;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JButton mostrarCartelera;
     private javax.swing.JButton mostrarPersonas;
     private javax.swing.JButton mostrarReporte;
